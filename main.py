@@ -7,7 +7,7 @@ import time
 bot = telebot.TeleBot('7390224751:AAGsXfghYYvStUGFqoFIVYocKv9ii7s71gs')
 
 # Replace with your actual API key
-API_KEY = "AIzaSyCRgE6KxfBk_zuqg144pWudRex7CzEmWaw"
+API_KEY = "AIzaSyCD3sWeDT3j5z0B0tphHifkDWD06io5nOE"
 CUSTOM_SEARCH_ENGINE_ID = "a012d00b3fd6f436c"  # Replace with your custom search engine ID
 
 # Owner user ID
