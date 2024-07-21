@@ -3,6 +3,9 @@ import requests
 from bs4 import BeautifulSoup
 import os
 import time
+from flask import Flask
+
+app = Flask(__name__)
 
 bot = telebot.TeleBot('7390224751:AAFzR12SXIEyYYDdKJ895QQnREVX4B_WQKE')
 
@@ -106,4 +109,10 @@ def dork_command(message):
     # Update last command time for the user
     last_command_time[user_id] = time.time()
 
-bot.polling()
+@app.route('/')
+def index():
+    return 'bot online'
+
+if __name__ == '__main__':
+    bot.polling()
+    app.run(host='0.0.0.0', port=5000)
